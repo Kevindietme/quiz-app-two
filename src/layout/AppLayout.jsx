@@ -5,7 +5,7 @@ export default function AppLayout({ children }) {
 
     return(
         <>
-        <NavMenu />
+        {/* <NavMenu /> */}
             {children}
         <Footer />
         </>

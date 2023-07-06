@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Heebo&family=Signika+Negative:wght@500&display=swap');
+
+h1,h2,h3,p,li{
+    font-family: 'Heebo', sans-serif;
+}
