@@ -1,11 +1,23 @@
-
-
-export default function Card() {
+export default function Card({ data, quizId, quizLength }) {
     
     return(
 
        <div className="quiz-card">
-        <h2>Card</h2>
+        <p>{quizId + 1}/{quizLength}</p>
+        <h3>{ data[quizId.question] }</h3>
+        <ul>
+            <li>
+{
+    data[quizId].options.map(
+        (element, index) => {
+            return(
+            <li key={index}>{element.answer}</li>
+            )
+        }
+    )
+}
+            </li>
+            </ul>
        </div>
        
     )
