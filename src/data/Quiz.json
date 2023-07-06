@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": [
+            {
+                "answer": "Paris",
+                "isCorrect": true
+            },
+
+            {
+                "answer": "New York",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "London",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "Dublin",
+                "isCorrect": false
+            }
+
+
+        ]
+    },
+
+   { "id": 2,
+    "question": "What is the capital of Arizona?",
+    "options": [
+        {
+            "answer": "Tempe",
+            "isCorrect": false
+        },
+
+        {
+            "answer": "Phoenix",
+            "isCorrect": true
+        },
+
+        {
+            "answer": "Glendale",
+            "isCorrect": false
+        },
+
+        {
+            "answer": "Scottsdale",
+            "isCorrect": false
+        }]
+    },
+
+        {"id": 3,
+        "question": "What is the capital of Germany?",
+        "options": [
+            {
+                "answer": "Hamburg",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "Berlin",
+                "isCorrect": true
+            },
+
+            {
+                "answer": "Schnoozerlorf",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "Germantown",
+                "isCorrect": false
+            }]
+        },
+            
+            {"id": 4,
+            "question": "What is the capital of California?",
+            "options": [
+                {
+                    "answer": "San Diego",
+                    "isCorrect": false
+                },
+    
+                {
+                    "answer": "Capitola",
+                    "isCorrect": false
+                },
+    
+                {
+                    "answer": "Glendale",
+                    "isCorrect": false
+                },
+    
+                {
+                    "answer": "Sacramento",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ]
