@@ -11,27 +11,36 @@ export default function QuizApp() {
     const [score, setScore] = useState(0);
     const [showResult, setShowResult] = useState(false);
 
-    const handleAnswer = () => {
+    const handleAnswer = (isCorrect) => {
+        isCorrect && setScore(score + 1);
 
-    }
-    const handleReset = () => {
+        const newQuizId = quizId + 1;
 
-    }
-
-    return(
-       <> 
+        (newQuizId < quizLength)
+            ? setQuizId(newQuizId)
+            : setShowResult(true)
+        }
+        
+        const handleReset = () => {
+            setQuizId(0)
+            setScore(0)
+            setShowResult(false);
+        }
+        
+        return(
+            <> 
         {
             !showResult
-                ? <Card
-                    quizId={quizId}
-                    data={data} 
-                    quizLength={quizLength}
-                    handleAnswer={handleAnswer} />
-                
-                : <Result 
-                    score={score}
-                    quizLength={quizLength}
-                    handleReset={handleReset} />
+            ? <Card
+            quizId={quizId}
+            data={data} 
+            quizLength={quizLength}
+            handleAnswer={handleAnswer} />
+            
+            : <Result 
+                score={score}
+                quizLength={quizLength}
+                handleReset={handleReset} />
         }
         </>
     )
